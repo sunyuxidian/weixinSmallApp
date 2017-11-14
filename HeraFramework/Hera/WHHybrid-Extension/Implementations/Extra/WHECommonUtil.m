@@ -13,7 +13,7 @@
 #import "WDSDeviceMacros.h"
 #import <Photos/Photos.h>
 #import <MessageUI/MessageUI.h>
-
+#import "WDHBundleUtil.h"
 
 #ifndef     WHECommonUtil_m
 #define     WHECommonUtil_m
@@ -75,7 +75,7 @@ static WHECommonUtil *utilInstance_ = nil;
 
 + (UIBarButtonItem*)leftBarButtonItemWithTarget:(id)target selector:(SEL)selector andTitle:(NSString*)title {
     UIButton* button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 50, 44)];
-    UIImage *backgroundImage = [UIImage imageNamed:@"WDIPh_btn_navi_back"];
+    UIImage *backgroundImage = [WDHBundleUtil imageFromBundleWithName:@"WDIPh_btn_navi_back"];
     
     [button setImage:backgroundImage forState:UIControlStateNormal];
     
@@ -114,12 +114,12 @@ static WHECommonUtil *utilInstance_ = nil;
         if (imgName.length == 0) {
             // default image does not require to resize.
             needResize = NO;
-            bgimg = [UIImage imageNamed:@"WDIPh_btn_navi_right22.png"];
+            bgimg = [WDHBundleUtil imageFromBundleWithName:@"WDIPh_btn_navi_right22.png"];
         }
     }
     
     if (bgimg == nil) {
-        bgimg = [UIImage imageNamed:image];
+        bgimg = [WDHBundleUtil imageFromBundleWithName:image];
     };
     
     [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];

@@ -7,6 +7,7 @@
 //
 
 #import "WHEScanView.h"
+#import "WDHBundleUtil.h"
 
 @interface WHEScanView()
 
@@ -91,7 +92,7 @@
 - (void)setupViews {
 	
 	_lineImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 2, self.bounds.size.width, 5.0)];
-	_lineImageView.image = [UIImage imageNamed:@"scanningLine"];
+	_lineImageView.image = [WDHBundleUtil imageFromBundleWithName:@"scanningLine"];
 	[self addSubview:_lineImageView];
 	
     self.layer.borderColor = UIColor.whiteColor.CGColor;

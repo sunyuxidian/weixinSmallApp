@@ -179,7 +179,7 @@
  */
 #pragma mark - 图片资源
 
-#define GL_IMAGE(name)                          [UIImage imageNamed:(name)]
+#define GL_IMAGE(name)                          [WDHBundleUtil imageFromBundleWithName:(name)]
 
 
 #endif /* WDSUIConstant_h */

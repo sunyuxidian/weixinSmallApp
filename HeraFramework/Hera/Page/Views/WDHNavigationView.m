@@ -9,6 +9,7 @@
 #import "WDHNavigationView.h"
 #import "WDHUtils.h"
 #import "WDHDeviceMacro.h"
+#import "WDHBundleUtil.h"
 
 @interface WDHNavigationView()
 
@@ -45,7 +46,7 @@
         self.leftButton.tintColor = [UIColor whiteColor];
         self.rightButton.tintColor = [UIColor whiteColor];
         
-        UIImage *img = [UIImage imageNamed:@"WDIPh_btn_navi_back"];
+        UIImage *img = [WDHBundleUtil imageFromBundleWithName:@"WDIPh_btn_navi_back"];
         [self.leftButton setImage:img forState:UIControlStateNormal];
         //        self.leftButton.imageEdgeInsets = UIEdgeInsets(top:0,left:10,bottom:0,right:0)
         self.titleLabel.textAlignment = NSTextAlignmentCenter;
