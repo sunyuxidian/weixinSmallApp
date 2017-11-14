@@ -43,7 +43,7 @@
                                                 
                                                 NSString *fileMD5 = [WHECryptUtil md5WithBytes:(char *)[data bytes] length:[data length]];
                                                 NSString *originalImageName = [NSString stringWithFormat:@"tmp_%@.jpg",fileMD5];
-                                                NSString *originalImagePath = [tempDir stringByAppendingString:originalImageName];
+                                                NSString *originalImagePath = [tempDir stringByAppendingPathComponent:originalImageName];
                                                 if ([data writeToFile:originalImagePath atomically:YES]) {
                                                     if (success) {
                                                         success(@{@"tempFilePath":[NSString stringWithFormat:@"%@%@",WDH_FILE_SCHEMA, originalImageName]});
