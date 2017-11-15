@@ -53,6 +53,12 @@
 	
 	NSURL *fileURL = [NSURL fileURLWithPath:path];
 	NSURL *toURL = [NSURL fileURLWithPath:[WDHFileManager tempDownloadZipPath]];
+    
+    NSString *toPath = [WDHFileManager tempDownloadZipPath];
+    if([fileManager fileExistsAtPath:toPath]) {
+        [fileManager removeItemAtPath:toPath error:nil];
+    }
+    
 	if ([fileManager copyItemAtURL:fileURL toURL:toURL error:nil]) {
 		NSDictionary *dic = @{appId: @{@"appId": appId}};
 		NSString *appInfoPath = [WDHFileManager tempDownloadZipInfoFilePath];

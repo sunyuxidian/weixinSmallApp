@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "ViewController.h"
 #import "RetrieveViewController.h"
+#import "LinkViewController.h"
 #import <Hera/WHHybridExtension.h>
 
 @interface AppDelegate ()
@@ -30,9 +31,8 @@
 	}];
 	
 	[WHHybridExtension registerExtensionApi:@"openLink" handler:^id(id param) {
-		UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
-		ViewController *vc = [sb instantiateViewControllerWithIdentifier:@"ViewControllerID"];
-		vc.view.backgroundColor = [UIColor whiteColor];
+		LinkViewController *vc = [[LinkViewController alloc] init];
+		vc.url = param[@"url"];
 		UINavigationController *navi = (UINavigationController *)self.window.rootViewController;
 		[navi pushViewController:vc animated:YES];
 
@@ -43,7 +43,7 @@
 		
 		RetrieveViewController *vc = [[RetrieveViewController alloc] init];
 		if([vc respondsToSelector:@selector(didReceiveApi:withParam:completion:)]){
-			[vc didReceiveApi:@"openLink" withParam:param completion:completion];
+			[vc didReceiveApi:@"getResult" withParam:param completion:completion];
 		}
 		UINavigationController *navi = (UINavigationController *)self.window.rootViewController;
 		[navi pushViewController:vc animated:YES];

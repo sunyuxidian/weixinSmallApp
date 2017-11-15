@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5526E6451FBBD8CB0014ACE6 /* RetrieveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5526E6441FBBD8CB0014ACE6 /* RetrieveViewController.m */; };
 		5526E64B1FBC177E0014ACE6 /* demo1.zip in Resources */ = {isa = PBXBuildFile; fileRef = 5526E64A1FBC177E0014ACE6 /* demo1.zip */; };
+		5526E64E1FBC37EC0014ACE6 /* LinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5526E64D1FBC37EC0014ACE6 /* LinkViewController.m */; };
 		639123BB2E30375E1AE1F3E4 /* libPods-HeraDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 70A368766FF0A5275194A974 /* libPods-HeraDemo.a */; };
 		E94AD6991FB4546600AC5B39 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E94AD68C1FB4546600AC5B39 /* AppDelegate.m */; };
 		E94AD69A1FB4546600AC5B39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E94AD68D1FB4546600AC5B39 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 		E94AD69E1FB4546600AC5B39 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E94AD6931FB4546600AC5B39 /* main.m */; };
 		E94AD69F1FB4546600AC5B39 /* resources.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E94AD6951FB4546600AC5B39 /* resources.xcassets */; };
 		E94AD6A01FB4546600AC5B39 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E94AD6971FB4546600AC5B39 /* ViewController.m */; };
+		E94AD6A11FB4546600AC5B39 /* HeraRes.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E94AD6981FB4546600AC5B39 /* HeraRes.bundle */; };
 		E94AD6A61FB45F3B00AC5B39 /* Hera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E94AD6A71FB45F3B00AC5B39 /* Hera.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +28,8 @@
 		5526E6431FBBD8CB0014ACE6 /* RetrieveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RetrieveViewController.h; sourceTree = "<group>"; };
 		5526E6441FBBD8CB0014ACE6 /* RetrieveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RetrieveViewController.m; sourceTree = "<group>"; };
 		5526E64A1FBC177E0014ACE6 /* demo1.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = demo1.zip; sourceTree = "<group>"; };
+		5526E64C1FBC37EC0014ACE6 /* LinkViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinkViewController.h; sourceTree = "<group>"; };
+		5526E64D1FBC37EC0014ACE6 /* LinkViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LinkViewController.m; sourceTree = "<group>"; };
 		70A368766FF0A5275194A974 /* libPods-HeraDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HeraDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		960E6830EC73C28305304025 /* Pods-HeraDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeraDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-HeraDemo/Pods-HeraDemo.release.xcconfig"; sourceTree = "<group>"; };
 		E94AD68B1FB4546600AC5B39 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -39,6 +43,7 @@
 		E94AD6951FB4546600AC5B39 /* resources.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = resources.xcassets; sourceTree = "<group>"; };
 		E94AD6961FB4546600AC5B39 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		E94AD6971FB4546600AC5B39 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E94AD6981FB4546600AC5B39 /* HeraRes.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HeraRes.bundle; sourceTree = "<group>"; };
 		E94AD6A71FB45F3B00AC5B39 /* Hera.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Hera.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED0C5E3BE86A1D57B4EFBFB4 /* Pods-HeraDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeraDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HeraDemo/Pods-HeraDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -109,6 +114,9 @@
 				E94AD6971FB4546600AC5B39 /* ViewController.m */,
 				5526E6431FBBD8CB0014ACE6 /* RetrieveViewController.h */,
 				5526E6441FBBD8CB0014ACE6 /* RetrieveViewController.m */,
+				5526E64C1FBC37EC0014ACE6 /* LinkViewController.h */,
+				5526E64D1FBC37EC0014ACE6 /* LinkViewController.m */,
+				E94AD6981FB4546600AC5B39 /* HeraRes.bundle */,
 			);
 			path = HeraDemo;
 			sourceTree = "<group>";
@@ -175,6 +183,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E94AD6A11FB4546600AC5B39 /* HeraRes.bundle in Resources */,
 				E94AD69D1FB4546600AC5B39 /* Info.plist in Resources */,
 				E94AD69C1FB4546600AC5B39 /* Main.storyboard in Resources */,
 				E94AD69A1FB4546600AC5B39 /* Assets.xcassets in Resources */,
@@ -214,7 +223,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		EBC58081D1022513B16CD4A7 /* [CP] Embed Pods Frameworks */ = {
@@ -239,6 +248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5526E64E1FBC37EC0014ACE6 /* LinkViewController.m in Sources */,
 				5526E6451FBBD8CB0014ACE6 /* RetrieveViewController.m in Sources */,
 				E94AD6A01FB4546600AC5B39 /* ViewController.m in Sources */,
 				E94AD69E1FB4546600AC5B39 /* main.m in Sources */,

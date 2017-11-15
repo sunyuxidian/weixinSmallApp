@@ -11,8 +11,6 @@
 
 @interface ViewController ()
 
-@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *indicatorView;
-
 @end
 
 @implementation ViewController
@@ -33,14 +31,12 @@
 
 - (void)didTap {
 
-	[self.indicatorView startAnimating];
 	self.view.userInteractionEnabled = NO;
 	
 	WDHAppInfo *appInfo = [[WDHAppInfo alloc] init];
 	appInfo.appId = @"demo1";
 	appInfo.userId = @"userid111";
 	[[WDHInterface sharedInterface] startAppWithAppInfo:appInfo entrance:self.navigationController completion:^(BOOL success, NSString *msg) {
-		[self.indicatorView stopAnimating];
 		self.view.userInteractionEnabled = YES;
 		NSLog(@"%@", msg);
 	}];

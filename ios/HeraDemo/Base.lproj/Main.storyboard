@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="saS-Mw-1y9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="saS-Mw-1y9">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,40 +22,32 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap Me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jz4-bg-kZp">
-                                <rect key="frame" x="159.5" y="323" width="56" height="21"/>
+                                <rect key="frame" x="159" y="323" width="56" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="BNG-Uq-zzS">
-                                <rect key="frame" x="223.5" y="324" width="20" height="20"/>
-                            </activityIndicatorView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vWT-P0-670">
-                                <rect key="frame" x="172.5" y="277" width="31" height="30"/>
-                                <state key="normal" title="Post"/>
-                                <connections>
-                                    <action selector="postMessage" destination="BYZ-38-t0r" eventType="touchUpInside" id="3i2-if-1bR"/>
-                                </connections>
-                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hera" translatesAutoresizingMaskIntoConstraints="NO" id="44F-GW-GZe">
+                                <rect key="frame" x="157" y="255" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="kW8-G5-W10"/>
+                                    <constraint firstAttribute="width" constant="60" id="uYt-Zs-VeZ"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="BNG-Uq-zzS" firstAttribute="leading" secondItem="Jz4-bg-kZp" secondAttribute="trailing" constant="8" id="6jZ-r9-GMf"/>
                             <constraint firstItem="Jz4-bg-kZp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="HHa-pO-uAe"/>
-                            <constraint firstItem="Jz4-bg-kZp" firstAttribute="top" secondItem="vWT-P0-670" secondAttribute="bottom" constant="16" id="NqJ-RY-DNp"/>
-                            <constraint firstItem="vWT-P0-670" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PcE-Kr-hE9"/>
+                            <constraint firstItem="44F-GW-GZe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MYJ-lh-641"/>
                             <constraint firstItem="Jz4-bg-kZp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RS8-rc-qJQ"/>
-                            <constraint firstItem="BNG-Uq-zzS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="UfC-4H-1ok"/>
+                            <constraint firstItem="Jz4-bg-kZp" firstAttribute="top" secondItem="44F-GW-GZe" secondAttribute="bottom" constant="8" id="RYE-CK-qrq"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="RVy-kv-l8t"/>
-                    <connections>
-                        <outlet property="indicatorView" destination="BNG-Uq-zzS" id="SW5-MJ-fpq"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="810" y="137"/>
+            <point key="canvasLocation" x="808.79999999999995" y="136.28185907046478"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="4R4-4W-MZe">
@@ -74,4 +66,7 @@
             <point key="canvasLocation" x="-150" y="138"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="hera" width="60" height="60"/>
+    </resources>
 </document>

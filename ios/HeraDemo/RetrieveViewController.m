@@ -21,7 +21,8 @@
 	[super viewDidLoad];
 	
 	self.view.backgroundColor = UIColor.whiteColor;
-	UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 100, 30)];
+	UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem];
+	button.frame = CGRectMake(0, 0, 100, 30);
 	[button setTitle:@"haha" forState:UIControlStateNormal];
 	[button addTarget:self action:@selector(foo) forControlEvents:UIControlEventTouchUpInside];
 	button.center = self.view.center;
@@ -30,6 +31,7 @@
 
 - (void)foo {
 	self.apiCompletion(@{@"result": @"heheh"});
+	[self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)didReceiveApi:(NSString *)api withParam:(id)params completion:(WDHApiCompletion)completion {

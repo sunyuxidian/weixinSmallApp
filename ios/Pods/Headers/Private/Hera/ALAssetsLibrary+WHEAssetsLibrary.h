@@ -1,1 +1,0 @@
-../../../Hera/HeraFramework/Hera/Tools/ALAssetsLibrary+WHEAssetsLibrary.h

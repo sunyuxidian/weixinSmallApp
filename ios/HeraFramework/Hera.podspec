@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "Hera"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "Weixin Small App Framework"
   s.description  = "A Framework For Weixin Small App running"
   s.homepage     = "http://www.weidian.com"
@@ -16,9 +16,9 @@ Pod::Spec.new do |s|
   s.resource = "ios/HeraFramework/Resources/*.bundle"
   s.requires_arc = true
 
-  s.dependency "Reachability"
-  s.dependency "MJRefresh"
-  s.dependency "ZipArchive"
-  s.dependency "AFNetworking"
+  s.dependency "Reachability", "~> 3.2"
+  s.dependency "MJRefresh", "~> 3.1.9"
+  s.dependency "ZipArchive", "~> 1.4.0"
+  s.dependency "AFNetworking", "~> 3.0"
 
 end

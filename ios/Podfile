@@ -2,8 +2,26 @@ platform :ios, '9.0'
 
 source 'https://github.com/CocoaPods/Specs.git'
 
+target 'Hera' do
+    
+    workspace 'HeraFramework/Hera'
+    xcodeproj 'HeraFramework/Hera.xcodeproj'
+	
+    pod 'Reachability'
+    pod 'MJRefresh'
+    pod 'ZipArchive'
+    pod 'AFNetworking'
+	
+end
+
 target 'HeraDemo' do
     
-    pod "Hera"
+    workspace 'HeraDemo'
+    xcodeproj 'HeraDemo.xcodeproj'
+	
+	pod 'Reachability'
+    pod 'MJRefresh'
+    pod 'ZipArchive'
+	pod 'AFNetworking'
 	
 end

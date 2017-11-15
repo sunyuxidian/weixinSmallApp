@@ -1,1 +1,0 @@
-../../../Hera/HeraFramework/Hera/WDHApp.h
