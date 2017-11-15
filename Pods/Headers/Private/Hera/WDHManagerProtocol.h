@@ -1,0 +1,1 @@
+../../../Hera/HeraFramework/Hera/Manager/WDHManagerProtocol.h

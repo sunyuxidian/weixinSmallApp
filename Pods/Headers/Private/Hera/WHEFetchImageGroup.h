@@ -1,0 +1,1 @@
+../../../Hera/HeraFramework/Hera/Tools/WHEFetchImageGroup.h

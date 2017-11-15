@@ -1,10 +1,29 @@
 //
-//  WHECommonUtil.h
-//  WDSCommonLib
+// Copyright (c) 2017, weidian.com
+// All rights reserved.
 //
-//  Created by zephyrhan on 16/1/25.
-//  Copyright © 2016年 Weidian. All rights reserved.
+// Redistribution and use in source and binary forms, with or without
+// modification, are permitted provided that the following conditions are met:
 //
+// * Redistributions of source code must retain the above copyright notice, this
+// list of conditions and the following disclaimer.
+//
+// * Redistributions in binary form must reproduce the above copyright notice,
+// this list of conditions and the following disclaimer in the documentation
+// and/or other materials provided with the distribution.
+//
+// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+// AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+// IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+// DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+// FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+// DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+// SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+// CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+// OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+// OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+//
+
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
@@ -15,17 +34,80 @@
 
 #pragma mark - common UI
 
+/**
+ 生成返回按钮
+
+ @param target target
+ @param selector selector
+ @return backBarButton
+ */
 + (UIBarButtonItem *)backBarButtonItemWithTarget:(id)target selector:(SEL)selector;
+
+
+/**
+ 生成左边的按钮
+
+ @param target target
+ @param selector selector
+ @param title 文字
+ @return 按钮
+ */
 + (UIBarButtonItem *)leftBarButtonItemWithTarget:(id)target selector:(SEL)selector andTitle:(NSString *)title;
+
+
+/**
+ 生成右边按钮
+
+ @param target target
+ @param selector selector
+ @param image 图
+ @param title 文字
+ @return 按钮
+ */
 + (UIBarButtonItem *)rightBarButtonItemWithTarget:(id)target selector:(SEL)selector image:(id)image andTitle:(NSString *)title;
 
+
+/**
+ 获取当前app的window
+
+ @return window
+ */
 + (UIWindow *)appWindow;
+
+
+/**
+ 获取当前app的NavigationController
+
+ @return NavigationController
+ */
 + (UINavigationController *)currentNavigationController;
+
+
+/**
+ 生成NavigationController
+
+ @param controller 根控制器
+ @return NavigationController
+ */
 + (UINavigationController *)navControllerWithRootViewController:(UIViewController *)controller;
 
 #pragma mark - animation
 
+/**
+ 推动动画
+
+ @param view 视图
+ @param direction 方向
+ */
 + (void)animatPushOnView:(UIView *)view fromDirection:(NSString *)direction;
+
+
+/**
+ 翻转动画
+
+ @param view 视图
+ @param direction 方向
+ */
 + (void)animatFlipOnView:(UIView *)view fromDirection:(NSString *)direction;
 
 
@@ -71,10 +153,6 @@
  @return group标识
  */
 + (NSString *)appGroup;
-//
-//+ (NSString *)cuid;
-//
-//+ (NSString *)suid;
 
 /**
  设置新的UA
@@ -101,16 +179,12 @@
  */
 + (NSString *)tutorialSwitchKey;
 
-
-
 /**
  *  @brief  把Frame转化为整型
  *  @param  oldFrame 为Frame值
  *  @return 整型的Frame
  */
 CGRect WHE_CGRectIntMakeWithFrame(CGRect oldFrame);
-
-
 
 /**
  *  @brief 将坐标值转换为整型
@@ -124,8 +198,6 @@ CGRect WHE_CGRectIntMakeWithFrame(CGRect oldFrame);
  */
 CGRect WHE_CGRectIntMake(CGFloat x, CGFloat y, CGFloat width, CGFloat height);
 
-
-
 /**
  *  转换时间戳字符串，到指定时区的yyyy-MM-dd 格式
  *
@@ -135,8 +207,6 @@ CGRect WHE_CGRectIntMake(CGFloat x, CGFloat y, CGFloat width, CGFloat height);
  *  @return formath后的时间字符串
  */
 + (NSString *)formatterStringFromTimeZone:(int)timezone timestampString:(NSString *)timestampString;
-
-
 
 /**
  *  @author Acorld, 15-02-08
@@ -148,15 +218,12 @@ CGRect WHE_CGRectIntMake(CGFloat x, CGFloat y, CGFloat width, CGFloat height);
 + (BOOL)detectHasPermissionOfAccessVideo;
 
 
-// 判断是否可以访问相册
-+ (BOOL)isCanUsePhotos;
-
 /**
- *    获取网络状态
- *
- *    @return YES 联网， NO断网
+ 判断是否可以访问相册
+
+ @return 是/否
  */
-//+ (BOOL)hasNetwork;
++ (BOOL)isCanUsePhotos;
 
 
 /**
@@ -224,12 +291,7 @@ typedef enum : NSInteger
  */
 void WDAppOpenSettings(WHEWDAppOpenSettingsType appOpenSettingsType);
 
-// *************************************
-
 @end
-
-
-
 
 
 
@@ -291,7 +353,6 @@ UIImage *whe_conversionImageFromView(UIView *cView, CGRect imgRect, CGFloat scal
 
 // ************************************************ 响应对象的SEL方法 ************************************************
 /**
- *  @author Snail, 17-3-28
  *
  *  @brief  响应对象的SEL方法
  *
@@ -314,7 +375,6 @@ BOOL wheRespondsToSelMethodWithIdSel(id wTarget, SEL toSEL, id firstObject, id t
 
 // ************************************************ 编译时间 ************************************************
 /**
- *  @author Snail, 17-4-05
  *
  *  @brief  编译时间
  *
@@ -327,6 +387,7 @@ NSString *whe_compileBuildDateString();
 
 
 // ************************************************
+
 
 
 

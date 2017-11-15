@@ -158,8 +158,6 @@
 		469D624B1F14DA0300719AFE /* NSData+WDH.m in Sources */ = {isa = PBXBuildFile; fileRef = 469D62491F14DA0300719AFE /* NSData+WDH.m */; };
 		46A8DE161F3075A700C6DAF3 /* WDHTabBarViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 46A8DE141F3075A700C6DAF3 /* WDHTabBarViewController.h */; };
 		46A8DE171F3075A700C6DAF3 /* WDHTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46A8DE151F3075A700C6DAF3 /* WDHTabBarViewController.m */; };
-		46D239071F1F9B7700751BF0 /* WDHPageViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 46D239051F1F9B7700751BF0 /* WDHPageViewController.h */; };
-		46D239081F1F9B7700751BF0 /* WDHPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D239061F1F9B7700751BF0 /* WDHPageViewController.m */; };
 		46DB2B231F387AEC001F5279 /* NSString+WDH.h in Headers */ = {isa = PBXBuildFile; fileRef = 46DB2B211F387AEC001F5279 /* NSString+WDH.h */; };
 		46DB2B241F387AEC001F5279 /* NSString+WDH.m in Sources */ = {isa = PBXBuildFile; fileRef = 46DB2B221F387AEC001F5279 /* NSString+WDH.m */; };
 		46E55A921F1C6062007D7C9E /* WDHBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 46E55A901F1C6062007D7C9E /* WDHBridge.h */; };
@@ -381,8 +379,6 @@
 		469D62491F14DA0300719AFE /* NSData+WDH.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+WDH.m"; sourceTree = "<group>"; };
 		46A8DE141F3075A700C6DAF3 /* WDHTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WDHTabBarViewController.h; path = Views/WDHTabBarViewController.h; sourceTree = "<group>"; };
 		46A8DE151F3075A700C6DAF3 /* WDHTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WDHTabBarViewController.m; path = Views/WDHTabBarViewController.m; sourceTree = "<group>"; };
-		46D239051F1F9B7700751BF0 /* WDHPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDHPageViewController.h; sourceTree = "<group>"; };
-		46D239061F1F9B7700751BF0 /* WDHPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDHPageViewController.m; sourceTree = "<group>"; };
 		46DB2B211F387AEC001F5279 /* NSString+WDH.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+WDH.h"; sourceTree = "<group>"; };
 		46DB2B221F387AEC001F5279 /* NSString+WDH.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+WDH.m"; sourceTree = "<group>"; };
 		46E55A901F1C6062007D7C9E /* WDHBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDHBridge.h; sourceTree = "<group>"; };
@@ -629,8 +625,6 @@
 				4625BB7C1F172E5A0031CE7D /* WDHPageModel.h */,
 				4625BB7D1F172E5A0031CE7D /* WDHPageModel.m */,
 				468E12C21F1DA885009472E5 /* WDHPageManagerProtocol.h */,
-				46D239051F1F9B7700751BF0 /* WDHPageViewController.h */,
-				46D239061F1F9B7700751BF0 /* WDHPageViewController.m */,
 				468E12BE1F1CE1C0009472E5 /* WDHUtils.h */,
 				468E12BF1F1CE1C0009472E5 /* WDHUtils.m */,
 			);
@@ -971,7 +965,6 @@
 				4625BB8D1F1752670031CE7D /* WDHManagerProtocol.h in Headers */,
 				E94AD6FA1FB9738D00AC5B39 /* GLProgressHUD.h in Headers */,
 				E94AD6B71FB9589400AC5B39 /* WHEAssetsGroupViewController.h in Headers */,
-				46D239071F1F9B7700751BF0 /* WDHPageViewController.h in Headers */,
 				468282BE1F601DEE00FC71D8 /* WHE_pauseVoice.h in Headers */,
 				468282DE1F601DEE00FC71D8 /* WHE_showModal.h in Headers */,
 				4625BB821F172F920031CE7D /* WDHService.h in Headers */,
@@ -1074,7 +1067,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hera/Pods-Hera-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-Hera/Pods-Hera-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E9DB063F4586217EFDFC0C54 /* [CP] Check Pods Manifest.lock */ = {
@@ -1183,7 +1176,6 @@
 				469D62471F14C2D000719AFE /* WDHAppInfo.m in Sources */,
 				E94AD6F91FB9738D00AC5B39 /* GLProgressHUD.m in Sources */,
 				468282CD1F601DEE00FC71D8 /* WHE_saveFile.m in Sources */,
-				46D239081F1F9B7700751BF0 /* WDHPageViewController.m in Sources */,
 				468282E31F601DEE00FC71D8 /* WHE_stopRecord.m in Sources */,
 				468282EB1F601DEE00FC71D8 /* WHE_vibrateShort.m in Sources */,
 				468282A51F601DEE00FC71D8 /* WHE_getFileInfo.m in Sources */,

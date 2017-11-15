@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.author       = { "sunyu" => "sunyu@weidian.com", "wangyiqiao" => "wangyiqiao@weidian.com" }
   s.platform     = :ios, "9.0"
   s.ios.deployment_target = "9.0"
-  s.source       = { :git => "https://github.com/sunyuxidian/weixinSmallApp.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/sunyuxidian/weixinSmallApp.git", :tag => s.version.to_s }
   s.source_files  = "HeraFramework", "HeraFramework/Hera/**/*.{h,m}"
   s.public_header_files = "HeraFramework/Hera/**/*.h"
   s.resource = "HeraFramework/Resources/*.bundle"
