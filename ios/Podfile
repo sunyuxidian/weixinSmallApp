@@ -4,8 +4,8 @@ source 'https://github.com/CocoaPods/Specs.git'
 
 target 'Hera' do
     
-    workspace 'HeraFramework/Hera'
-    xcodeproj 'HeraFramework/Hera.xcodeproj'
+    workspace 'Hera'
+    xcodeproj 'Hera.xcodeproj'
 	
     pod 'Reachability'
     pod 'MJRefresh'
